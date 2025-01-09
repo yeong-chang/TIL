@@ -27,7 +27,7 @@
 #### 부분 함수적 종속
 
 기본키 전체가 아닌, 기본키 일부에 대해 종속될때 학생번호와 과목에 따라 강사가 바뀔수있다
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8103718e-c110-400b-8fd2-0a4c2c462a64/fc472ba4-4468-4cb7-a0cd-b5d2aac9502c/image.png)
+![sqld부분 함수적 종속.png](SQLDimg%2Fsqld%EB%B6%80%EB%B6%84%20%ED%95%A8%EC%88%98%EC%A0%81%20%EC%A2%85%EC%86%8D.png)
 
 
 ### 속성의 분류
