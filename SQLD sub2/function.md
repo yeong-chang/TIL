@@ -1,4 +1,4 @@
-## 문자 함수    
+## 문자 함수     
 ![문자형 함수.png](sqldimg2%2F%EB%AC%B8%EC%9E%90%ED%98%95%20%ED%95%A8%EC%88%98.png)
 ## 숫자 함수    
 ![숫자형 함수.png](sqldimg2%2F%EC%88%AB%EC%9E%90%ED%98%95%20%ED%95%A8%EC%88%98.png)
