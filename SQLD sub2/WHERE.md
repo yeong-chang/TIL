@@ -1,4 +1,4 @@
-## WHERE 절 
+## WHERE 절  
 - 테이블의 데이터 중 원하는 조건에 맞는 데이터만 조회하고 싶을 경우 사용.
 - 여러 조건을 AND,OR로 동시에 전달 가능.
 - <MARK>NULL 조회 시 IS NULL/ IS NOU NULL 연산자 사용</MARK>
