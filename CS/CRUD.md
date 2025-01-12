@@ -4,7 +4,7 @@ CRUD 가 뭘까….
 
 Create(생성)
 
-```jsx
+```java
 // 예: 새 사용자 추가
 public void createUser(User user) {
     userRepository.save(user); // 데이터베이스에 새로운 사용자 저장
@@ -13,7 +13,7 @@ public void createUser(User user) {
 
 Read(조회)
 
-```jsx
+```java
 // 예: 특정 사용자 조회
 public User getUserById(Long id) {
     return userRepository.findById(id).orElse(null); // 데이터베이스에서 특정 사용자 조회
@@ -22,7 +22,7 @@ public User getUserById(Long id) {
 
 Update(수정)
 
-```jsx
+```java
 // 예: 사용자 정보 수정
 public void updateUser(Long id, User user) {
     if (userRepository.existsById(id)) {
@@ -34,7 +34,7 @@ public void updateUser(Long id, User user) {
 
 Delete(삭제)
 
-```jsx
+```java
 // 예: 사용자 삭제
 public void deleteUser(Long id) {
     userRepository.deleteById(id); // 데이터베이스에서 특정 사용자 삭제
