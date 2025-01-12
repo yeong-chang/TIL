@@ -44,5 +44,5 @@
 ### NULLIF 사용 예제  
 ![NULLIF예제.png](sqldimg2%2FNULLIF%EC%98%88%EC%A0%9C.png)
 
-### CASE 사용 예제  
-![CASE문예제.png](sqldimg2%2FCASE%EB%AC%B8%20%EC%98%88%EC%A0%9C.png)
+### CASE 사용 예제    
+![CASE문예제.png](..%2FSQLD%20sub2%2Fsqldimg2%2FCASE%EB%AC%B8%EC%98%88%EC%A0%9C.png)
