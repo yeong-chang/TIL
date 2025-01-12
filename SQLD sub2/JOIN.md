@@ -25,5 +25,4 @@
 
 #### SELF JOIN
 
-![JOIN.png](sqldimg2%2FJOIN.png)
-
+![join.png](sqldimg2%2Fjoin.png)
