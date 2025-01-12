@@ -45,4 +45,4 @@
 ![NULLIF예제.png](sqldimg2%2FNULLIF%EC%98%88%EC%A0%9C.png)
 
 ### CASE 사용 예제  
-![CASE문 예제.png](sqldimg2%2FCASE%EB%AC%B8%20%EC%98%88%EC%A0%9C.png)
+![CASE문예제.png](sqldimg2%2FCASE%EB%AC%B8%20%EC%98%88%EC%A0%9C.png)
