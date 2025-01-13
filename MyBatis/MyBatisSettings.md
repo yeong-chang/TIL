@@ -19,7 +19,8 @@
 ## MyBatis 설정 파일
 
 ### mybatis-config.xml
-- 파일 위치 <mark>src/main/resources/mybatis-config.xml</mark>
+- 파일 위치 <mark>src/main/resources/mybatis-config.xml</mark>  
+![mybatis-config_xml.png](img%2Fmybatis-config_xml.png)
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
@@ -51,7 +52,8 @@
 ```
 ### boardMapper.xml
 - 파일 위치는 mybatis-config.xml에서 설정 한 것처럼
-  <mark>src/main/resource/mapper/board/board-mapper.xml</mark>
+  <mark>src/main/resource/mapper/board/board-mapper.xml</mark>  
+![boardmapperxml위치.png](img%2Fboardmapperxml%EC%9C%84%EC%B9%98.png)
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
