@@ -67,6 +67,29 @@
 </mapper>
 ```
 
+### root-context.xml
+```xml
+   <!-- mapper interface scanner -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.pcwk.ehr.mapper"></property>
+    </bean>
+
+    <!--mybatis-config.xml, mapper  -->
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/> 
+        <!--mybatis-config-->
+        <property name="configLocation"   value="classpath:mybatis-config.xml"/>
+        <!-- mapper설정 -->
+        <property name="mapperLocations"  value="classpath:mapper/**/*.xml"/>
+    </bean>
+
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactoryBean"/>
+    </bean>
+```
+
+
+
 ### log4j2.properties
 <mark>src/main/resource/log4j2.properties</mark>
 ```properties
