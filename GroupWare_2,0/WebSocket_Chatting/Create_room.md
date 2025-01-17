@@ -38,6 +38,10 @@ public List<UserVO> getAllUsers() {
 }
 ```
 
+getAllUsers()메서드는 채팅방을 생성할때 수신받는 사람의 ID값을 불러올때 선택하기 위해 
+모든 사용자의 ID와 NAME 정보를 받아온다.
+
+---
 
 ## Controller 작성
 ````java
@@ -72,3 +76,64 @@ public String createChatRoom(@RequestParam("userId1") String userId1, HttpSessio
     return "redirect:/chatroom/show.do";  // 채팅방 목록 페이지로 리다이렉트
 }
 ````
+로그인한 사용자의 아이디를 senderId로 받기 위해 session값을 사용한다.  
+RequestParam으로 받아올 데이터를 userId1에 매핑해서 JSP에서 값을 받아온다.
+
+---
+
+## JSP 작성
+```html
+<body>
+<jsp:include page="/WEB-INF/views/include/header.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/views/include/aside.jsp"></jsp:include>
+
+<div class="container">
+    <h1>채팅방 생성</h1>
+    <div class="form-container">
+        <form action="createChatRoom.do" method="post">
+            <div>
+                <label for="userId1">유저 1</label>
+                <select name="userId1" id="userId1">
+                    <option value="">유저를 선택하세요</option>
+                    <c:forEach var="user" items="${userList}">
+                        <option value="${user.userId}">${user.name}</option>
+                    </c:forEach>
+                </select>
+            </div>
+
+
+            <div class="buttons">
+                <input type="submit" id="doCreate" value="등록">
+                <input type="button" id="moveToPrevious" value="돌아가기" onclick="window.history.back();">
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+```
+
+select 태그의 id를 userID1로 매핑해주고 선택해주는 값의 userId를 Controller로 넘긴다.
+
+---
+
+# 결과
+채팅방 등록하는 초기 화면.
+![채팅방 생성 1.png](img%2F%EC%B1%84%ED%8C%85%EB%B0%A9%20%EC%83%9D%EC%84%B1%201.png)
+
+---
+
+채팅방에 초대할 사람의 이름을 선택하는 화면. (홍주영 선택)
+![채팅방 생성 2.png](img%2F%EC%B1%84%ED%8C%85%EB%B0%A9%20%EC%83%9D%EC%84%B1%202.png)
+
+---
+
+로그인한 아이디와 홍주영의 아이디가 들어가있는 채팅방 생성.
+![채팅방 생성 3.png](img%2F%EC%B1%84%ED%8C%85%EB%B0%A9%20%EC%83%9D%EC%84%B1%203.png)
+
+---
+
+홍주영 USER_ID 확인 2006 맞게 들어왔다.
+![채팅방 생성4.png](img%2F%EC%B1%84%ED%8C%85%EB%B0%A9%20%EC%83%9D%EC%84%B14.png)
+
+---
