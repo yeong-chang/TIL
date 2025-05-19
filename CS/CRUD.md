@@ -4,7 +4,7 @@ CRUD 가 뭘까….
 
 Create(생성)
 
-```java
+```java  
 // 예: 새 사용자 추가
 public void createUser(User user) {
     userRepository.save(user); // 데이터베이스에 새로운 사용자 저장
