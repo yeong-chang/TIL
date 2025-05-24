@@ -7,7 +7,7 @@
 		int flag = 0;
 		StringBuilder sb = new StringBuilder(100);
 
-		sb.append("INSERT INTO messenger (\n");
+		sb.append("INSERT INTO messenger (\n" );
 		sb.append("	    chat_room_id,     \n");
 		sb.append("	    sender_id,        \n");
 		sb.append("	    receiver_id       \n");
